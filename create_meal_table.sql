@@ -1,3 +1,4 @@
+-- Creates the main "meals" table.
 CREATE TABLE meals(
     meal_id INTEGER PRIMARY KEY,
     meal_name TEXT NOT NULL UNIQUE,
