@@ -4,8 +4,8 @@ This repository contains the code for a meal generator.
 
 ## goals
 - [x] Start Project
-- [ ] Research and create database to store meals
-- [ ] Create CLI to add meals to database
+- [x] Research and create database to store meals
+- [x] Create CLI to add meals to database
     - [ ] Create CLI option to edit meals in database
 - [ ] Create random generator to select meals from database
 
