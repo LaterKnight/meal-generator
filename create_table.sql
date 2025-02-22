@@ -1,7 +1,7 @@
 CREATE TABLE meals(
-    meal_id int PRIMARY KEY,
-    meal_name varchar(255) NOT NULL UNIQUE,
-    meal_cook_time int,
-    meal_prep_time int,
-    meal_complexity varchar(255)
+    meal_id INTEGER PRIMARY KEY,
+    meal_name TEXT NOT NULL UNIQUE,
+    meal_cook_time TEXT,
+    meal_prep_time TEXT,
+    meal_complexity TEXT
 )
