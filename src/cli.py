@@ -1,8 +1,6 @@
 ## Import libraries
 
-
 import sqlite3
-
 
 
 ## Define functions
@@ -24,14 +22,15 @@ def optionSelect():
 
 
 def optionRouter(option):
-    print(type(option))
-    print(option)
+    # Checks if input is correct type
     if type(option) != int:
         print("Please enter a number")
         optionSelect()
-    if option > 1:
+    # Checks if input is in correct range
+    if option > 1 and option > 0:
         print("Please select a number specified")
         optionSelect()
+    # Sends user to addMeal function
     elif option == 1:
         addMeal()
     else:
@@ -40,9 +39,9 @@ def optionRouter(option):
 
 def addMeal():
     meal_name = input("Meal name: ")
-    meal_cook_time = input("How long does it take to cook? (Not including prep time, just time to cook!) ")
-    meal_prep_time = input("How long does it take to prep?")
-    meal_complexity = input("How complex is the meal? (Easy, Medium, Hard)")
+    meal_cook_time = input("How long does it take to cook? (Not including prep time, just time to cook!): ")
+    meal_prep_time = input("How long does it take to prep?: ")
+    meal_complexity = input("How complex is the meal? (Easy, Medium, Hard): ")
 
     cur.execute(f"""
         INSERT INTO meals (meal_name, meal_cook_time, meal_prep_time, meal_complexity)
